@@ -1,0 +1,15 @@
+site_name: SPSRC User Docs 
+site_description: 'This user documentation site guides users on technical and procedural aspects relating to the use of the SKA Regional Centre Prototype at the IAA-CSIC computing facility.'
+site_author: 'Laura Darriba'
+repo_url: 
+
+nav:
+    - Home: index.md
+
+theme:
+    name: readthedocs
+    highlightjs: true
+
+markdown_extensions:
+  - toc:
+      permalink: True
