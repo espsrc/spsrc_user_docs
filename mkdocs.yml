@@ -6,6 +6,7 @@ repo_url:
 nav:
     - Home: index.md
     - User access: user_access.md
+    - Acessing services: services.md 
     - About us: about_us.md
 
 theme:
