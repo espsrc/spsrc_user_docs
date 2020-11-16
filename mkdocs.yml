@@ -5,6 +5,7 @@ repo_url:
 
 nav:
     - Home: index.md
+    - Technical specifications: tech_specifications.md
     - Getting started: getting_started.md
     - Services: services.md  
     - About us: about_us.md

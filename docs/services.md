@@ -1,10 +1,15 @@
-# Accessing the protoSRC@IAA-CSIC cloud platform services 
+# Services at the SRC prototype at the IAA-CSIC cloud platform 
 
 Work in progress
 
-## JupyterLab 
+## Virtual Machines 
 
 Work in progress 
+
+## JupyterHub
+
+Work in progress 
+
 
 
 
