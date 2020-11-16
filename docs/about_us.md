@@ -1,6 +1,6 @@
 # Contact
 
-Users can request support via email at ska-itsupport@iaa.csic.es . Participants may also join our Slack workspace by emailing ska-itsupport@iaa.csic.es and request to be added.  
+Users can request support via email at ska-itsupport 'at' iaa.csic.es . Users may also join our Slack workspace by emailing ska-itsupport 'at' iaa.csic.es and request to be added.  
 
 
 # The SKA Regional Centre Prototype at IAA-CSIC 
