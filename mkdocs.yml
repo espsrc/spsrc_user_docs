@@ -8,6 +8,7 @@ nav:
     - User access: user_access.md
     - Acessing services: services.md  
     - About us: about_us.md
+    - Acknowledgements: acknowledgements.md 
 
 theme:
     name: readthedocs
