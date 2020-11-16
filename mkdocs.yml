@@ -7,7 +7,8 @@ nav:
     - Home: index.md
     - Technical specifications: tech_specifications.md
     - Getting started: getting_started.md
-    - Services: services.md  
+    - Services: services.md
+    - SDC2: sdc2.md  
     - About us: about_us.md
     - Acknowledgements: acknowledgements.md 
 
