@@ -17,9 +17,6 @@ Below are the flavors offered for the SDC2:
 Due to limited capacity we will only be able to support either 3 teams with the **sdc2.c16m64**
 or 2 teams with the **sdc2.c32m128** flavor.
 
-# Logging in
+# Getting access
 
-SDC2 participants will be provided with an IP address and two port numbers:
-      1) one port for SSH access
-      2) another port for access with a remote desktop application.
-
+Please follow instructions [here](access.md)
