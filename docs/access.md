@@ -6,4 +6,10 @@ provide you with the best possible resources.
 
 # Features
 
+Virtual machines in the protoSRC can be pre-configured either with or without a desktop environment. If you
+choose a VM with a desktop environment, access will be offered via [Apache Guacamole](https://guacamole.apache.org/)
+and a minimal [Xfce desktop](https://www.xfce.org/). If you don't need a desktop environment for your research
+project we can offer plain SSH access via public-key authentication.
+
+**sudo** access will be granted to install new software and create user accounts for your collaborators.
 See what is available [here](tech_specifications.md)
