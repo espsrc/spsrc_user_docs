@@ -1,36 +1,27 @@
 # Technical specifications 
 
-The protoSRC computing facility at the IAA-CSIC is an OpenStack cloud platform.   
+The protoSRC computing facility at the IAA-CSIC runs an OpenStack cloud with an aggregate of 200 CPUs cores
+and 2.5 TB of memory distributed across five compute hypervisors, plus 600+ TB of usable storage capacity
+managed by Ceph. OpenStack and Ceph are interconnected internally with a 100Gbps network and the cluster
+is connected to [RedIRIS](https://www.rediris.es/) (the Spanish National Research Network ) with a 10Gbps link.
 
-The OpenStack cloud gathers 200 CPUs cores and 2.5 TB of memory across five compute hypervisors, plus 600+ TB of usable storage capacity managed by Ceph. The servers are interconnected in a 100Gbps network and the cluster is connected to RedIRIS (the Spanish National Research Network ) with a 10Gbps link.
-
- 
 ## Virtual machine flavours 
-The protoSRC provides seven ad-hoc flavors for virtual machines. Users can request the one more suitable for them.   
 
-![](images/VM_flavours.png)
+The protoSRC provides the following default flavors but talk to us if you need something specific:
 
-The SDC2 participants can choose between the following two flavours: 
+| Flavor Name | vCPUs | RAM   | Root Disk |
+|:-----------:|:-----:|:-----:|:---------:|
+| spsrc.c2m4  | 2     | 4 GB  | 10 GB |
+| spsrc.c4m8  | 4     | 8 GB  | 10 GB |
+| spsrc.c8m32 | 8     | 32 GB | 50 GB |
 
-spsrc.c8m32
-8 vCPU cores
-32 GB RAM
-50 GB disk
+## Virtual machine images
 
-spsrc.c16m64
-16 vCPU cores
-64 GB RAM
-50 GB disk
-
-## Software installed
-
-The protoSRC provides the following base images for virtual machines from which users can request the most suitable for them:
+We currently support the following base images for the virtual machines:
 
 - Ubuntu 18.04
 - Ubuntu 20.04
 - CentOS 8
 - CentOS 7
 
-Users with sudo access will be able to install their own software. 
-
-
+**sudo** access will be granted can install new software and create user accounts for your collaborators.
