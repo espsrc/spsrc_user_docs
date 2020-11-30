@@ -24,4 +24,6 @@ We currently support the following base images for virtual machines:
 - CentOS 8
 - CentOS 7
 
-**sudo** access will be granted to install new software and create user accounts for your collaborators.
+# Getting access
+
+Please follow instructions [here](access.md).
