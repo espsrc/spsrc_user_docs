@@ -1,9 +1,9 @@
 # SKA Science Data Challenge 2
 
 The protoSRC has offered computing resources for the 2nd SKA Science Data Challenge (SDC2).
-For more information on how to participate, please visit
+For more information on how to participate, please visit:
 
-https://sdc2.astronomers.skatelescope.org
+[https://sdc2.astronomers.skatelescope.org](https://sdc2.astronomers.skatelescope.org)
 
 # Virtual machine flavors
 
@@ -19,4 +19,4 @@ or 2 teams with the **sdc2.c32m128** flavor.
 
 # Getting access
 
-Please follow instructions [here](access.md)
+Please follow instructions [here](access.md).
