@@ -11,8 +11,8 @@ The protoSRC provides the following default flavors but talk to us if you need s
 
 | Flavor Name | vCPUs | RAM   | Root Disk |
 |:-----------:|:-----:|:-----:|:---------:|
-| spsrc.c2m4  | 2     | 4 GB  | 10 GB |
-| spsrc.c4m8  | 4     | 8 GB  | 10 GB |
+| spsrc.c2m4  | 2     | 4 GB  | 50 GB |
+| spsrc.c4m8  | 4     | 8 GB  | 50 GB |
 | spsrc.c8m32 | 8     | 32 GB | 50 GB |
 
 ## Virtual machine images
