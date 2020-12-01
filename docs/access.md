@@ -17,6 +17,6 @@ Radioastronomers interested in using the [KERN](https://kernsuite.info) reposito
 the latest Ubuntu 18.04 LTS pre-configured.
 
 Researchers can also request to have either [Singularity](https://sylabs.io) or [podman](https://podman.io)
-pre-configured to run their containerised workloads.
+pre-configured to run containerised workloads.
 
 See what VM flavors and base images are available [here](tech_specifications.md)
