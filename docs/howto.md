@@ -61,11 +61,11 @@ When a project requires access to a remote desktop we preconfigure virtual machi
 
 Using the clipboard in Guacamole is not intuitive. If you are planning to use the clipboard a lot,
 and the information you are going to work with is available online (i.e. via a web browser), we then
-recommend you to open firefox to copy/paste easily inside the virtual machine.
+recommend you to open firefox to copy/paste as usual inside the virtual machine.
 
-If, on the other hand, you need to copy/paste between workstation and the virtual machine, then
+If, on the other hand, you need to copy/paste between your workstation and the virtual machine, then
 you will have to use the Guacamole menu. On the tab where you have Guacamole working, press **Ctrl+Alt+Shift** 
-and a menu will appear on the left:
+and the menu appears on the left:
 
 ![](images/guac-clipboard.png)
 
