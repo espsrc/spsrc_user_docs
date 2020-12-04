@@ -110,6 +110,5 @@ Scroll down and check the following and click on **Save**:
 
 * Permissions/Change own password
 * Connections/RDP
-* Connections/SSH
 
 ![](images/guac-add-user-3.png)
