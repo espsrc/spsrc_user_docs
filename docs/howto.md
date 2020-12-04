@@ -9,7 +9,7 @@ When a project requires access to a remote desktop we preconfigure virtual machi
 
 ## How to change your password in Guacamole
 
-Go to the user menu on the top-right:
+Go to the menu on the top-right and click on **Settings**:
 
 ![](images/guac-menu-user.png)
 
