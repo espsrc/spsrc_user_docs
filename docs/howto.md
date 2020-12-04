@@ -57,6 +57,31 @@ Please send your public key to ska-itsupport 'at' iaa.csic.es and we will config
 When a project requires access to a remote desktop we preconfigure virtual machines with
 [Apache Guacamole](https://guacamole.apache.org).
 
+## Working with the clipboard in Guacamole
+
+Using the clipboard in Guacamole is not intuitive. If you are planning to use the clipboard a lot,
+and the information you are going to work with is available online (i.e. via a web browser), we then
+recommend you to open firefox to copy/paste easily inside the virtual machine.
+
+If, on the other hand, you need to copy/paste between workstation and the virtual machine, then
+you will have to use the Guacamole menu. On the tab where you have Guacamole working, press **Ctrl+Alt+Shift** 
+and a menu will appear on the left:
+
+![](images/guac-clipboard.png)
+
+You will see the Guacamole clipboard that will be used as an intermediate buffer between your workstation
+and the virtual machine:
+
+* Copy/paste from your workstation to the virtual machine: 1) first copy the text into the clipboard
+as usual in your workstation; 2) open the Guacamole menu with **Ctrl+Alt+Shift** and paste your text
+into the Guacamole clipboard. 3) The text is now available inside the virtual machine clipboard and
+you can paste it as expected with **Ctrl+V**
+
+* Copy/paste from the virtual machine to your workstation: 1) use **Ctrl+C** inside the virtual machine
+to copy text as usual. 2) open the Guacamole menu with **Ctrl+Alt+Shift** and paste your text
+into the Guacamole clipboard. 3) The text is now available in your workstation's clipboard and you
+can paste it as expected.
+
 ## How to change your password in Guacamole
 
 Go to the menu on the top-right and click on **Settings**:
