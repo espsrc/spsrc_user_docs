@@ -2,6 +2,56 @@
 
 Here we gather a collection of how-to notes to help users self-managing their virtual machines.
 
+# User management
+
+Initially there is only one preconfigured user account on the virtual machine, the **spsrc** user,
+which can be used to create new accounts for your collaborators.
+
+## Change your default password
+
+Run the following command on a terminal and follow instructions:
+```
+passwd
+```
+
+## Create a user account
+
+Open a terminal and run the following commands:
+```
+# Generate a new password hash:
+openssl passwd
+
+# Create a new account:
+sudo useradd --password "<output-from-previous-command>" --gid spsrc-group --create-home --shell /bin/bash <collaborator>
+```
+For example:
+```
+# Create a new account:
+sudo useradd --password "<output-from-previous-command>" --gid spsrc-group --create-home --shell /bin/bash john
+```
+
+## Delete a user account
+
+Here are the steps:
+```
+sudo userdel <collaborator> --remove
+```
+For example:
+```
+sudo userdel john --remove
+```
+
+# Software installation
+
+All users are granted with **sudo** privileges to use the operating system package manager
+(i.e. **apt-get** in Ubuntu, and **yum/dnf** in Centos7/8) to install packages via the official
+repositories. 
+
+# SSH access
+
+SSH access into virtual machines is only allowed via public-key authentication.
+Please send your public key to ska-itsupport 'at' iaa.csic.es and we will configure your SSH access.
+
 # Remote desktop: Guacamole
 
 When a project requires access to a remote desktop we preconfigure virtual machines with
