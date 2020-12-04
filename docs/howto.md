@@ -8,6 +8,7 @@ Here we gather a collection of how-to notes to help users self-managing their vi
   * [Delete a user account](#delete-a-user-account)
 - [Software installation](#software-installation)
 - [SSH access](#ssh-access)
+- [Transfer data](#rransfer-data)
 - [Remote desktop: Guacamole](#remote-desktop-guacamole)
   * [Working with the clipboard in Guacamole](#working-with-the-clipboard-in-guacamole)
   * [How to change your password in Guacamole](#how-to-change-your-password-in-guacamole)
@@ -63,6 +64,11 @@ repositories.
 
 SSH access into virtual machines is only allowed via public-key authentication.
 Please send your public key to ska-itsupport 'at' iaa.csic.es and we will configure your SSH access.
+
+# Transfer data
+
+We suggest using [FileZilla](https://filezilla-project.org/download.php?type=client) to transfer data
+in and out of the virtual machine. Please send your public SSH key to ska-itsupport 'at' iaa.csic.es.
 
 # Remote desktop: Guacamole
 
