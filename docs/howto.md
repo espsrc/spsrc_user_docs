@@ -83,9 +83,9 @@ appears in the Guacamole clipboard; 3) you can now copy from there into your wor
 
 ## How to change your password in Guacamole
 
-Go to the menu on the top-right and click on **Settings**:
+Press **Ctrl+Alt+Shift** to open the Guacamole menu and click on **Settings**:
 
-![](images/guac-menu-user.png)
+![](images/images/guac-change-pass.png)
 
 Then go to **Preferences** and follow instructions to change your password:
 
