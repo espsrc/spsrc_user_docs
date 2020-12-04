@@ -8,7 +8,7 @@ Here we gather a collection of how-to notes to help users self-managing their vi
   * [Delete a user account](#delete-a-user-account)
 - [Software installation](#software-installation)
 - [SSH access](#ssh-access)
-- [Transfer data](#rransfer-data)
+- [Transfer data](#transfer-data)
 - [Remote desktop: Guacamole](#remote-desktop-guacamole)
   * [Working with the clipboard in Guacamole](#working-with-the-clipboard-in-guacamole)
   * [How to change your password in Guacamole](#how-to-change-your-password-in-guacamole)
