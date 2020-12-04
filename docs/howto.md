@@ -2,7 +2,7 @@
 
 Here we gather a collection of how-to notes to help users self-managing their virtual machines.
 
-# Remote desktop connection
+# Remote desktop: Guacamole
 
 When a project requires access to a remote desktop we preconfigure virtual machines with
 [Apache Guacamole](https://guacamole.apache.org).
