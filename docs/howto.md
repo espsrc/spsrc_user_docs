@@ -7,7 +7,7 @@ Here we gather a collection of how-to notes to help users self-managing their vi
 When a project requires access to a remote desktop we preconfigure virtual machines with
 [Apache Guacamole](https://guacamole.apache.org).
 
-## How to change your password
+## How to change your password in Guacamole
 
 Go to the user menu on the top-right:
 
