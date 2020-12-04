@@ -5,7 +5,7 @@ Here we gather a collection of how-to notes to help users self-managing their vi
 # User management
 
 Initially there is only one preconfigured user account on the virtual machine, the **spsrc** user,
-which can be used to create new accounts for your collaborators.
+with privileges to create new accounts for your collaborators.
 
 ## Change your default password
 
@@ -74,13 +74,12 @@ and the virtual machine:
 
 * Copy/paste from your workstation to the virtual machine: 1) first copy the text into the clipboard
 as usual in your workstation; 2) open the Guacamole menu with **Ctrl+Alt+Shift** and paste your text
-into the Guacamole clipboard. 3) The text is now available inside the virtual machine clipboard and
+into the Guacamole clipboard; 3) the text is now available inside the virtual machine clipboard and
 you can paste it as expected with **Ctrl+V**
 
 * Copy/paste from the virtual machine to your workstation: 1) use **Ctrl+C** inside the virtual machine
-to copy text as usual. 2) open the Guacamole menu with **Ctrl+Alt+Shift** and paste your text
-into the Guacamole clipboard. 3) The text is now available in your workstation's clipboard and you
-can paste it as expected.
+to copy text as usual; 2) open the Guacamole menu with **Ctrl+Alt+Shift** and copied text automatically
+appears in the Guacamole clipboard; 3) you can now copy from there into your workstation's clipboard.
 
 ## How to change your password in Guacamole
 
