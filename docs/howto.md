@@ -1,19 +1,9 @@
+
+[TOC]
+
 # How-to guide
 
 Here we gather a collection of how-to notes to help users self-managing their virtual machines.
-
-- [User management](#user-management)
-  * [Change your default password](#change-your-default-password)
-  * [Create a user account](#create-a-user-account)
-  * [Delete a user account](#delete-a-user-account)
-- [Software installation](#software-installation)
-- [SSH access](#ssh-access)
-- [Transfer data](#transfer-data)
-- [Remote desktop: Guacamole](#remote-desktop-guacamole)
-  * [Working with the clipboard in Guacamole](#working-with-the-clipboard-in-guacamole)
-  * [How to change your password in Guacamole](#how-to-change-your-password-in-guacamole)
-  * [How to add a new user in Guacamole](#how-to-add-a-new-user-in-guacamole)
-
 
 # User management
 
