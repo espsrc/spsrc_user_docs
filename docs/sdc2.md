@@ -7,7 +7,7 @@ For more information on how to participate, please visit:
 
 # Virtual machine flavors
 
-Below are the flavors offered for the SDC2:
+Here we show the flavors offered for the SDC2:
 
 | Flavor Name  | vCPUs | RAM    | Root Disk | Additional block storage |
 |:------------:|:-----:|:------:|:---------:|:------------------------:|
