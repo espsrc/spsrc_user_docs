@@ -24,6 +24,3 @@ We currently support the following base images for virtual machines:
 - CentOS 8
 - CentOS 7
 
-# Getting access
-
-Please follow instructions [here](access.md).
