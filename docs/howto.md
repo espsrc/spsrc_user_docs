@@ -120,3 +120,23 @@ Scroll down and check the following and click on **Save**:
 * Connections/RDP
 
 ![](images/guac-add-user-3.png)
+
+## How to change your locale in Guacamole
+
+Depending on your system's [locale](https://en.wikipedia.org/wiki/Locale_(computer_software))
+you may find issues while typing text inside the virtual machine via Guacamole. Check
+whether you have the correct configuration in Guacamole by following the steps below.
+
+Go to the menu on the top-right and click on **Settings**:
+
+![](images/guac-menu-user.png)
+
+Then go to **Connections** and click on **RDP**:
+
+![](images/guac-locale-1.png)
+
+Now look for the **Basic Settings** section and choose the correct **keyboard layout**:
+
+![](images/guac-locale-2.png)
+
+Do not forget to scroll down and on **Save**.
