@@ -17,6 +17,3 @@ Below are the flavors offered for the SDC2:
 We will support either 3 teams with the **sdc2.c16m64**
 or 2 teams with the **sdc2.c32m128** flavor.
 
-# Getting access
-
-Please follow instructions [here](access.md).
