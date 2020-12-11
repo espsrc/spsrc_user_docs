@@ -3,7 +3,7 @@
 
 # How-to guide
 
-Here we gather a collection of how-to notes to help users self-managing their virtual machines.
+Here we gather a collection of how-to notes with the aim of helping users to self-manage their virtual machines.
 
 # User management
 
@@ -35,7 +35,7 @@ sudo useradd --password "<output-from-previous-command>" --gid spsrc-group --cre
 
 ## Delete a user account
 
-Here are the steps:
+You can delete a user account using the userdel command:
 ```
 sudo userdel <collaborator> --remove
 ```
