@@ -14,7 +14,7 @@ Below are the flavors offered for the SDC2:
 | sdc2.c16m64  | 16    | 64 GB  | 100 GB | 2 TB |
 | sdc2.c32m128 | 32    | 128 GB | 100 GB | 2 TB |
 
-Due to limited capacity we will only be able to support either 3 teams with the **sdc2.c16m64**
+We will support either 3 teams with the **sdc2.c16m64**
 or 2 teams with the **sdc2.c32m128** flavor.
 
 # Getting access
