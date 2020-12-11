@@ -1,5 +1,7 @@
 
-# Features
+# Services
+
+## Virtual Machines
 
 Virtual machines in the protoSRC can be pre-configured with or without a desktop environment. If you choose a
 VM with a desktop environment remote access will be offered via [Apache Guacamole](https://guacamole.apache.org)
