@@ -139,4 +139,4 @@ Now look for the **Basic Settings** section and choose the correct **keyboard la
 
 ![](images/guac-locale-2.png)
 
-Do not forget to scroll down and on **Save**.
+Do not forget to scroll down and click on **Save**.
