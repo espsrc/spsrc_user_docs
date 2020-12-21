@@ -53,7 +53,32 @@ repositories.
 # SSH access
 
 SSH access into virtual machines is only allowed via public-key authentication.
-Please send your public key to ska-itsupport 'at' iaa.csic.es and we will configure your SSH access.
+
+If you have access to the virtual machine via [Guacamole](#remote-desktop-guacamole) then you can
+add your public SSH key to your account yourself. Please open a terminal and try these steps:
+
+```
+# go to your home folder
+cd
+
+# create an .ssh folder if it doesn't exist
+mkdir -p .ssh
+
+# configure permissions
+chmod 0700 -R .ssh
+
+# now cd into the .ssh folder
+cd .ssh
+
+# create an authorized file and add your public SSH key
+vi authorized_keys
+
+# configure permissions
+chmod 0600 authorized_keys
+```
+
+You should now be able to login with your SSH keypair. If you have problems, please send your
+public key to ska-itsupport 'at' iaa.csic.es and we will configure SSH access for you.
 
 # Transfer data
 
