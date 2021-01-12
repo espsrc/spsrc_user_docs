@@ -165,3 +165,60 @@ Now look for the **Basic Settings** section and choose the correct **keyboard la
 ![](images/guac-locale-2.png)
 
 Do not forget to scroll down and click on **Save**.
+
+# Conda
+
+[Conda](https://conda.io) is a package manager that help you find and install software
+packages without having administrator privileges.
+
+Below are the steps to get a basic conda installation working with Python 3. Open
+a terminal on your virtual machine and run the following commands:
+
+```
+# Go to a working directory to install conda
+mkdir test
+cd test
+
+# Download installer
+curl -O https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
+
+# Install conda in the "conda-install" folder
+bash Miniconda3-latest-Linux-x86_64.sh -b -p conda-install
+
+# Activate conda
+source conda-install/etc/profile.d/conda.sh
+
+# Create a basic environment with the latest Python 3
+conda create -n py3env python=3
+
+# Activate the "py3env":
+conda activate py3env
+
+# check it with
+which python
+python --version
+
+# "pip" is also available:
+which pip
+
+# To leave the environment, type:
+conda deactivate
+```
+Conda environments are great for managing the dependencies on your projects
+and it helps you improve the reproducibility of your code. For more information
+about conda, please visit:
+
+https://docs.conda.io/projects/conda/en/latest/user-guide/getting-started.html
+
+## Install JupyterLab with Conda
+
+Here we describe the steps to install JupyterLab into its own conda environment:
+
+```
+# Follow steps above to install conda.
+# Then create a conda environment for JupyterLab:
+conda create -n jupyterlab -c conda-forge jupyterlab -y
+conda activate jupyterlab
+jupyter lab --ip=0.0.0.0 --port=<port-number>
+```
+JupyterLab will print out the URL to connect to your session.
