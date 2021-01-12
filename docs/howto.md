@@ -209,3 +209,16 @@ and it helps you improve the reproducibility of your code. For more information
 about conda, please visit:
 
 https://docs.conda.io/projects/conda/en/latest/user-guide/getting-started.html
+
+## Install JupyterLab with Conda
+
+Here we describe the steps to install JupyterLab into its own conda environment:
+
+```
+# Follow steps above to install conda.
+# Then create a conda environment for JupyterLab:
+conda create -n jupyterlab -c conda-forge jupyterlab -y
+conda activate jupyterlab
+jupyter lab --ip=0.0.0.0 --port=<port-number>
+```
+JupyterLab will print out the URL to connect to your session.
