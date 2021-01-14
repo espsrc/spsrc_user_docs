@@ -5,7 +5,10 @@ For more information on how to participate visit:
 
 [https://sdc2.astronomers.skatelescope.org](https://sdc2.astronomers.skatelescope.org)
 
-If your team has been allocated to the IAA-CSIC proto-SRC resource, please email ska-itsupport 'at' iaa.csic.es to get access.
+If your team has been allocated to the IAA-CSIC proto-SRC resource, please email ska-itsupport 'at'
+iaa.csic.es to get access.
+
+**We will be adding additional user instructions for SDC2 participants soon.**
 
 # Virtual machine flavors
 
@@ -16,6 +19,5 @@ Here we show the flavors offered for the SDC2:
 | sdc2.c16m64  | 16    | 64 GB  | 100 GB | 2 TB |
 | sdc2.c32m128 | 32    | 128 GB | 100 GB | 2 TB |
 
-We will support either 3 teams with the **sdc2.c16m64**
-or 2 teams with the **sdc2.c32m128** flavor.
+We will support either 3 teams with the **sdc2.c16m64** or 2 teams with the **sdc2.c32m128** flavor.
 
