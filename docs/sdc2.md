@@ -1,9 +1,11 @@
 # SKA Science Data Challenge 2
 
-The protoSRC has offered computing resources for the 2nd SKA Science Data Challenge (SDC2).
-For more information on how to participate, please visit:
+The IAA-CSIC proto-SRC has offered computing resources for the 2nd SKA Science Data Challenge (SDC2).
+For more information on how to participate visit:
 
 [https://sdc2.astronomers.skatelescope.org](https://sdc2.astronomers.skatelescope.org)
+
+If your team has been allocated to the IAA-CSIC proto-SRC resource, please contact us at ska-itsupport@iaa.es to get access.
 
 # Virtual machine flavors
 
