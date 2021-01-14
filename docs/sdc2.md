@@ -5,7 +5,7 @@ For more information on how to participate visit:
 
 [https://sdc2.astronomers.skatelescope.org](https://sdc2.astronomers.skatelescope.org)
 
-If your team has been allocated to the IAA-CSIC proto-SRC resource, please contact us at ska-itsupport@iaa.es to get access.
+If your team has been allocated to the IAA-CSIC proto-SRC resource, please email ska-itsupport 'at' iaa.csic.es to get access.
 
 # Virtual machine flavors
 
