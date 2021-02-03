@@ -83,7 +83,14 @@ public key to ska-itsupport 'at' iaa.csic.es and we will configure SSH access fo
 # Transfer data
 
 We suggest using [FileZilla](https://filezilla-project.org/download.php?type=client) to transfer data
-in and out of the virtual machine. Please send your public SSH key to ska-itsupport 'at' iaa.csic.es.
+in and out of the virtual machine.
+
+Transfers will only be possible via public SSH authentication. Here are instructions on how to
+configure FileZilla to work with SSH keys: 
+
+[https://wiki.filezilla-project.org/Howto](https://wiki.filezilla-project.org/Howto)
+
+Please send your public SSH key to ska-itsupport 'at' iaa.csic.es so we can configure it for you.
 
 # Remote desktop: Guacamole
 
