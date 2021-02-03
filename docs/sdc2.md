@@ -8,8 +8,6 @@ For more information on how to participate visit:
 If your team has been allocated to the IAA-CSIC proto-SRC resource, please email ska-itsupport 'at'
 iaa.csic.es to get access.
 
-**We will be adding additional user instructions for SDC2 participants soon.**
-
 # Virtual machine flavors
 
 Here we show the flavors offered for the SDC2:
@@ -21,3 +19,9 @@ Here we show the flavors offered for the SDC2:
 
 We will support either 3 teams with the **sdc2.c16m64** or 2 teams with the **sdc2.c32m128** flavor.
 
+# Storage configuration
+
+The storage on the virtual machine has been configured the following way:
+
+* There is a 2TB scratch area in: /mnt/scratch/sdc2
+* The SDC2 datacube is available in: /mnt/sdc2-datacube/sky_full.fits (read-only)
