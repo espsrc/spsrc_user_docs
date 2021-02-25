@@ -32,6 +32,7 @@ For example:
 # Create a new account:
 sudo useradd --password "<output-from-previous-command>" --gid spsrc-group --create-home --shell /bin/bash john
 ```
+**Warning**: Please configure a password with less than 8 characters. We have experimented issues with longer passwords.
 
 ## Delete a user account
 
