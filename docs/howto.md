@@ -32,7 +32,9 @@ For example:
 # Create a new account:
 sudo useradd --password "<output-from-previous-command>" --gid spsrc-group --create-home --shell /bin/bash john
 ```
-**Warning**: Please configure a password with less than 8 characters. We have experimented issues with longer passwords.
+
+.. caution::
+   Please configure a password with less than 8 characters. We have experimented issues with longer passwords.
 
 ## Delete a user account
 
@@ -87,7 +89,8 @@ Public keys are usually stored in files ending with the **.pub** extension. If y
 you can either email it to us via ska-itsupport 'at' iaa.csic.es or follow steps in the next
 section to configure SSH access yourself via Guacamole.
 
-:warning: **Please make sure you only share public SSH (files ending in .pub) with others.**
+.. danger::
+   Please make sure you only share public SSH (files ending in .pub) with others.
 
 If the `ls -al $HOME/.ssh` command above fails, it is very likely that you haven not configured
 SSH keys yet. To do so please use the `ssh-keygen` command:
