@@ -55,6 +55,58 @@ repositories.
 
 SSH access into virtual machines is only allowed via public-key authentication.
 
+## Create your own public SSH key
+
+For general information about how SSH authentication works, please visit:
+
+[https://www.ssh.com/ssh/key/](https://www.ssh.com/ssh/key/)
+
+If you have already created a public SSH key on your computer, it should be available in:
+
+```
+# list your SSH keys
+ls -al $HOME/.ssh
+```
+
+If the command above works, you just need to check whether your SSH key is loaded with:
+
+```
+# check whether your SSH keys are loaded
+ssh-add -L
+```
+
+That should print out all the SSH public keys that are already loaded in you terminal
+so just pick one to configure your SSH access to the virtual machine.
+
+If the `ssh-add -L` command did not return any output, please execute `ssh-add` or 
+`ssh-add ./path/to/private/key/` to load it. More information
+[here](https://www.ssh.com/ssh/agent#adding-ssh-keys-to-the-agent)
+
+Please note that both **private** and **public** SSH keys are located in the `$HOME/.ssh` folder.
+Public keys are usually stored in files ending with the **.pub** extension. If you have one,
+you can either email it to us via ska-itsupport 'at' iaa.csic.es or follow steps in the next
+section to configure SSH access yourself via Guacamole.
+
+:warning: **Please make sure you only share public SSH (files ending in .pub) with others.**
+
+If the `ls -al $HOME/.ssh` command above fails, it is very likely that you haven not configured
+SSH keys yet. To do so please use the `ssh-keygen` command:
+
+```
+# create a new SSH key pair
+ssh-keygen
+```
+
+Follow instructions on your terminal and for more information please visit:
+
+[https://www.ssh.com/ssh/keygen/](https://www.ssh.com/ssh/keygen/)
+
+If all went well you should have a new file ending in **.pub** under the `$HOME/.ssh` folder.
+Then, feel free to email us a copy of your **.pub** file to ska-itsupport 'at' iaa.csic.es
+so we configure your SSH access or follow steps in the next section if you have access to Guacamole.
+
+## Add your public SSH key to access your virtual machine
+
 If you have access to the virtual machine via [Guacamole](#remote-desktop-guacamole) then you can
 add your public SSH key to your account yourself. Please open a terminal and try these steps:
 
