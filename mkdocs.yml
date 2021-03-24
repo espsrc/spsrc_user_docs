@@ -14,9 +14,10 @@ nav:
 
 theme:
     name: readthedocs
+    toc_depth: 4
     highlightjs: true
 
 markdown_extensions:
   - toc:
-      permalink: True
+      permalink: True      
   - admonition

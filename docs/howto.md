@@ -5,19 +5,19 @@
 
 Here we gather a collection of how-to notes with the aim of helping users to self-manage their virtual machines.
 
-# User management
+## User management
 
 Initially there is only one preconfigured user account on the virtual machine, the **spsrc** user,
 with privileges to create new accounts for your collaborators.
 
-## Change your default password
+### Change your default password
 
 Run the following command on a terminal and follow instructions:
 ```
 passwd
 ```
 
-## Create a user account
+### Create a user account
 
 Open a terminal and run the following commands:
 ```
@@ -33,10 +33,10 @@ For example:
 sudo useradd --password "<output-from-previous-command>" --gid spsrc-group --create-home --shell /bin/bash john
 ```
 
-!!! warning
+!!! info
     Please configure a password with less than 8 characters. We have experimented issues with longer passwords.
 
-## Delete a user account
+### Delete a user account
 
 You can delete a user account using the userdel command:
 ```
@@ -47,17 +47,17 @@ For example:
 sudo userdel john --remove
 ```
 
-# Software installation
+## Software installation
 
-All users are granted with **sudo** privileges to use the operating system package manager
-(i.e. **apt-get** in Ubuntu, and **yum/dnf** in Centos7/8) to install packages via the official
+All users are granted with ``sudo`` privileges to use the operating system package manager
+(i.e. ``apt-get`` in Ubuntu, and ``yum/dnf`` in Centos7/8) to install packages via the official
 repositories. 
 
-# SSH access
+## SSH access
 
 SSH access into virtual machines is only allowed via public-key authentication.
 
-## Create your own public SSH key
+### Create your own public SSH key
 
 For general information about how SSH authentication works, please visit:
 
@@ -82,11 +82,11 @@ so just pick one to configure your SSH access to the virtual machine.
 
 If the `ssh-add -L` command did not return any output, please execute `ssh-add` or 
 `ssh-add ./path/to/private/key/` to load it. More information
-[here](https://www.ssh.com/ssh/agent#adding-ssh-keys-to-the-agent)
+[here](https://www.ssh.com/ssh/agent#adding-ssh-keys-to-the-agent).
 
 Please note that both **private** and **public** SSH keys are located in the `$HOME/.ssh` folder.
-Public keys are usually stored in files ending with the **.pub** extension. If you have one,
-you can either email it to us via ska-itsupport 'at' iaa.csic.es or follow steps in the next
+Public keys are usually stored in files ending with the ``.pub`` extension. If you have one,
+you can either email it to us via ``ska-itsupport`` 'at' ``iaa.csic.es`` or follow steps in the next
 section to configure SSH access yourself via Guacamole.
 
 !!! warning
@@ -104,11 +104,11 @@ Follow instructions on your terminal and for more information please visit:
 
 [https://www.ssh.com/ssh/keygen/](https://www.ssh.com/ssh/keygen/)
 
-If all went well you should have a new file ending in **.pub** under the `$HOME/.ssh` folder.
-Then, feel free to email us a copy of your **.pub** file to ska-itsupport 'at' iaa.csic.es
+If all went well you should have a new file ending in ``.pub``under the `$HOME/.ssh` folder.
+Then, feel free to email us a copy of your ``.pub`` file to ``ska-itsupport`` 'at' ``iaa.csic.es``
 so we configure your SSH access or follow steps in the next section if you have access to Guacamole.
 
-## Add your public SSH key to access your virtual machine
+### Add your public SSH key to access your virtual machine
 
 If you have access to the virtual machine via [Guacamole](#remote-desktop-guacamole) then you can
 add your public SSH key to your account yourself. Please open a terminal and try these steps:
@@ -134,9 +134,9 @@ chmod 0600 authorized_keys
 ```
 
 You should now be able to login with your SSH keypair. If you have problems, please send your
-public key to ska-itsupport 'at' iaa.csic.es and we will configure SSH access for you.
+public key to ``ska-itsupport`` 'at' ``iaa.csic.es`` and we will configure SSH access for you.
 
-# Transfer data
+## Transfer data
 
 We suggest using [FileZilla](https://filezilla-project.org/download.php?type=client) to transfer data
 in and out of the virtual machine.
@@ -146,14 +146,14 @@ configure FileZilla to work with SSH keys:
 
 [https://wiki.filezilla-project.org/Howto](https://wiki.filezilla-project.org/Howto)
 
-Please send your public SSH key to ska-itsupport 'at' iaa.csic.es so we can configure it for you.
+Please send your public SSH key to ``ska-itsupport`` 'at' ``iaa.csic.es`` so we can configure it for you.
 
-# Remote desktop: Guacamole
+## Remote desktop: Guacamole
 
 When a project requires access to a remote desktop we preconfigure virtual machines with
 [Apache Guacamole](https://guacamole.apache.org).
 
-## Working with the clipboard in Guacamole
+### Working with the clipboard in Guacamole
 
 Using the clipboard in Guacamole is not intuitive. If you are planning to use the clipboard a lot,
 and the information you are going to work with is available online (i.e. via a web browser), we then
@@ -177,7 +177,7 @@ you can paste it as expected with **Ctrl+V**
 to copy text as usual; 2) open the Guacamole menu with **Ctrl+Alt+Shift** and copied text automatically
 appears in the Guacamole clipboard; 3) you can now copy from there into your workstation's clipboard.
 
-## How to change your password in Guacamole
+### How to change your password in Guacamole
 
 Press **Ctrl+Alt+Shift** to open the Guacamole menu, first click on your username (**spsrc** on the
 example image) and then on **Settings**:
@@ -188,7 +188,7 @@ Then go to **Preferences** and follow instructions to change your password:
 
 ![](images/guac-change-pwd.png)
 
-## How to add a new user in Guacamole
+### How to add a new user in Guacamole
 
 Go to the menu on the top-right and click on **Settings**:
 
@@ -209,7 +209,7 @@ Scroll down and check the following and click on **Save**:
 
 ![](images/guac-add-user-3.png)
 
-## How to change your locale in Guacamole
+### How to change your locale in Guacamole
 
 Depending on your system's [locale](https://en.wikipedia.org/wiki/Locale_(computer_software))
 you may find issues while typing text inside the virtual machine via Guacamole. Check
@@ -229,7 +229,7 @@ Now look for the **Basic Settings** section and choose the correct **keyboard la
 
 Do not forget to scroll down and click on **Save**.
 
-# Conda
+## Conda
 
 [Conda](https://conda.io) is a package manager that help you find and install software
 packages without having administrator privileges.
@@ -269,11 +269,10 @@ conda deactivate
 ```
 Conda environments are great for managing the dependencies on your projects
 and it helps you improve the reproducibility of your code. For more information
-about conda, please visit:
+about conda, please visit: [Getting started with Conda](https://docs.conda.io/projects/conda/en/latest/user-guide/getting-started.html).
 
-https://docs.conda.io/projects/conda/en/latest/user-guide/getting-started.html
 
-## Install JupyterLab with Conda
+### Install JupyterLab with Conda
 
 Here we describe the steps to install JupyterLab into its own conda environment:
 
