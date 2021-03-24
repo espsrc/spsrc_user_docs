@@ -5,6 +5,7 @@ repo_url:
 
 nav:
     - Home: index.md
+    - Apply for access: access.md
     - Technical specifications: tech_specifications.md
     - Services: services.md
     - How-to guide: howto.md
