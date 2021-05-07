@@ -342,6 +342,11 @@ $ singularity exec /spsrc/software/containers/casa_stable_5.7.2-4.sif date
 Fri May  7 16:23:10 UTC
 $ singularity exec /spsrc/software/containers/casa_stable_5.7.2-4.sif echo hello
 hello
-
-
 ```
+This is an example of how to execute CASA: 
+```
+singularity exec /spsrc/software/containers/casa_stable_5.7.2-4.sif casa
+```
+![](images/singularity_exec_casa.png)
+
+
