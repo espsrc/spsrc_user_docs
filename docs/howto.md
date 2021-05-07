@@ -284,3 +284,69 @@ conda activate jupyterlab
 jupyter lab --ip=0.0.0.0 --port=<port-number>
 ```
 JupyterLab will print out the URL to connect to your session.
+
+## Singularity Containers 
+
+Containers are unit software packages that contain all the software, files, libraries, dependencies and environmental variables necessary to run a particular task or workflow. Containers are encapsulated software environments and abstract the software and applications from the underlying operating system. This allows users to run workflows in customized environments, switch between environments, and to share these environments with colleagues and research teams.
+
+Images are the files used to generate containers. Container images become containers at runtime. Containers are then identical copies instantiated from images.
+
+Container images can be found at /mnt/software/containers/ and are maintained by the support team. 
+
+Singularity is a open-source sotfware that performs containerization. 
+
+### Singularity shell 
+
+Users can open a Singularity container as an interactive shell and issue command line tasks within the environment that the container provides. 
+
+Here we will see an example of how to call the Singualrity container using the shell command to work with CASA: 
+
+```bash  
+
+spsrc@spi-kat-project-007:~$ singularity shell /spsrc/software/containers/casa_stable_5.7.2-4.sif 
+
+spsrc@casa_stable_5.7.2-4.sif:~$ casa --nogui
+
+=========================================
+The start-up time of CASA may vary
+depending on whether the shared libraries
+are cached or not.
+=========================================
+
+IPython 5.1.0 -- An enhanced Interactive Python.
+
+CASA 5.7.2-4   -- Common Astronomy Software Applications
+
+Creating a new telemetry file
+Telemetry initialized. Telemetry will send anonymized usage statistics to NRAO.
+You can disable telemetry by adding the following line to your ~/.casarc file:
+EnableTelemetry: False
+--> CrashReporter initialized.
+Enter doc('start') for help getting started with CASA...
+Using matplotlib backend: TkAgg
+
+CASA <1>:
+
+``` 
+You are ready to use CASA interactively! 
+
+
+### Singularity exec
+
+A user is able to execute a script or command within the container environment using the singularity ```exec``` command.
+
+Here we will see an example with common linux commands but you can use any script or software available in the Singularity Image instead.  
+
+```
+$ singularity exec /spsrc/software/containers/casa_stable_5.7.2-4.sif date
+Fri May  7 16:23:10 UTC
+$ singularity exec /spsrc/software/containers/casa_stable_5.7.2-4.sif echo hello
+hello
+```
+This is an example of how to execute CASA: 
+```
+singularity exec /spsrc/software/containers/casa_stable_5.7.2-4.sif casa
+```
+![](images/singularity_exec_casa.png)
+
+
