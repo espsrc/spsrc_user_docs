@@ -291,7 +291,7 @@ Containers are unit software packages that contain all the software, files, libr
 
 Images are the files used to generate containers. Container images become containers at runtime. Containers are then identical copies instantiated from images.
 
-Container images can be found at /mnt/software/containers/ and are maintained by the support team. 
+Container images can be found at /spsrc/software/containers/ and are maintained by the support team. 
 
 Singularity is a open-source sotfware that performs containerization. 
 
