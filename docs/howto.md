@@ -353,13 +353,20 @@ singularity exec /spsrc/software/containers/casa_stable_5.7.2-4.sif casa
 
 The following parameters can be use in each of the executions mentioned above. 
 
+To clean the environment before running the container:
 ```bash
---cleanenv: Clean the environment before running the container
---home $PWD: home directory specification inside the container. Use $PWD for your current directory or specify any directory inside the container (it does not need to exist)
---bind localdata:containerdata: binds a local directory with a directory inside the container. In this example, localdata on the host to containerdata in the container
+--cleanenv
+```
+To specify a home directory inside the container. Use `$PWD` to select your current directory or specify any directory inside the container (it does not need to exist):
+```bash
+--home $PWD
+```
+To bind a local directory with a directory inside the container. In this example we will bind the directory `localdata` in the host to the directory `containerdata` in the container:
+```bash
+--bind localdata:containerdata
 ```
 
-### Examples of --bind option to access a local folder from inside the container 
+### Examples of `--bind` option to access a local folder from inside the container 
 
 Add the parameter --bind <localfolder>:<containerfolder> to the singularity command:
     
@@ -375,15 +382,12 @@ Now,  inside the container, if you use the list command
 ```bash
 ls -l /mycontainerfolder
 ```
-then you will see you files of your local storage folder in /home/user/data
+you will see you files of your local storage folder in `/home/user/data`.
 
-then you will see you files of your local storage folder in /home/user/data
-
-you will see you files of your local storage folder in /home/user/data
-Now an example with execution mode  and sharing folders:
+Now an example with execution mode and sharing folders:
 ```bash
 singularity exec --bind /home/user/data:/mycontainerfolder --cleanenv --home $PWD /spsrc/software/containers/casa_1.7.0.sif python /mycontainerfolder/myscript.py
 ```
-You will execute python /mycontainerfolder/myscript.py that corresponds with the execution of the script /home/user/data/myscript.py 
-Note that you are calling/running the script myscript.py from inside the container, so the paths are related to the container.
+You will execute `python /mycontainerfolder/myscript.py` that corresponds to the execution of the script located in your machine it `/home/user/data/`
+Note that you are calling/running the script `myscript.py` from inside the container, so the paths are related to the container.
 
