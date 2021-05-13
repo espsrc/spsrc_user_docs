@@ -388,6 +388,5 @@ Now an example with execution mode and sharing folders:
 ```bash
 singularity exec --bind /home/user/data:/mycontainerfolder --cleanenv --home $PWD /spsrc/software/containers/casa_1.7.0.sif python /mycontainerfolder/myscript.py
 ```
-You will execute `python /mycontainerfolder/myscript.py` that corresponds to the execution of the script located in your machine it `/home/user/data/`
-Note that you are calling/running the script `myscript.py` from inside the container, so the paths are related to the container.
+You will execute `python /mycontainerfolder/myscript.py` that corresponds to the execution of the script located in your machine in `/home/user/data/`. Note that you are calling/running the script `myscript.py` from inside the container, so the paths are related to the container.
 
