@@ -19,7 +19,8 @@ passwd
 
 ### Create a user account
 
-Open a terminal and run the following commands:
+Open a terminal and run the following commands. When you enter the first command, you will have to enter the password that the new user will have. Once you enter the new password and verify it, the command will show a code. You have to use the code to generate the new user:
+
 ```
 # Generate a new password hash:
 openssl passwd
@@ -27,10 +28,14 @@ openssl passwd
 # Create a new account:
 sudo useradd --password "<output-from-previous-command>" --gid spsrc-group --create-home --shell /bin/bash <collaborator>
 ```
-For example:
+For example, imagine you want to create the user `john` and set a password for this user `acomlpicatedpass`. You can do:
 ```
-# Create a new account:
-sudo useradd --password "<output-from-previous-command>" --gid spsrc-group --create-home --shell /bin/bash john
+openssl passwd
+Password:                 <--- write acomplicatedpass
+Verifying - Password:     <--- write acomplicatedpass
+7TRPLSzGYvTf4
+
+sudo useradd --password 7TRPLSzGYvTf4 --gid spsrc-group --create-home --shell /bin/bash john
 ```
 
 !!! info
