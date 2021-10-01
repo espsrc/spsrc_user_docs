@@ -2,6 +2,11 @@
 
 # User Guide 
 
+## User management
+
+Initially there is only one preconfigured user account on the virtual machine, the **spsrc** user,
+with privileges to create new accounts for your collaborators.
+
 ## Software installation
 
 All users are granted with ``sudo`` privileges to use the operating system package manager
