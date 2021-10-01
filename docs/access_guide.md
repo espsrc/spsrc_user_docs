@@ -47,12 +47,6 @@ For example:
 sudo userdel john --remove
 ```
 
-## Software installation
-
-All users are granted with ``sudo`` privileges to use the operating system package manager
-(i.e. ``apt-get`` in Ubuntu, and ``yum/dnf`` in Centos7/8) to install packages via the official
-repositories. 
-
 ## SSH access
 
 SSH access into virtual machines is only allowed via public-key authentication.
