@@ -1,6 +1,6 @@
 [TOC]
 
-#User Guide 
+# User Guide 
 
 ## Software installation
 
