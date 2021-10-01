@@ -8,7 +8,8 @@ nav:
     - Apply for access: access.md
     - Technical specifications: tech_specifications.md
     - Services: services.md
-    - How-to guide: howto.md
+    - Access guide: access_guide.md
+    - User-guide: user_guide.md
     - SDC2: sdc2.md  
     - About us: about_us.md
     - Acknowledgements: acknowledgements.md 
