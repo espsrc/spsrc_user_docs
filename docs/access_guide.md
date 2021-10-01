@@ -89,7 +89,7 @@ You should now be able to login with your SSH keypair. If you have problems, ple
 public key to ``ska-itsupport`` 'at' ``iaa.csic.es`` and we will configure SSH access for you.
 
 
-## Microsoft Remote Desktop (Mac) and Remina (Linux) access
+## Remote desktop
 
 It is possible to access to you virtual machine through a remote desktop. 
 
@@ -100,7 +100,7 @@ It is possible to access to you virtual machine through a remote desktop.
 - You can add your Linux credentials to the connection configuration. If you leave them empty, you will be requested to enter them when you start the connection
 <img width="434" alt="image" src="https://user-images.githubusercontent.com/22152978/135613755-f41ef2df-9dcd-4dc7-b898-4d34764e0063.png">
 
-## Guacamole
+## Web-based remote desktop
 
 When a project requires access to a remote desktop we preconfigure virtual machines with
 [Apache Guacamole](https://guacamole.apache.org).
@@ -224,7 +224,7 @@ For example:
 sudo userdel john --remove
 ```
 
-## Transfer data
+## Data transfer
 
 We suggest using [FileZilla](https://filezilla-project.org/download.php?type=client) to transfer data
 in and out of the virtual machine.
