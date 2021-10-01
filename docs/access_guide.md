@@ -182,11 +182,6 @@ Now look for the **Basic Settings** section and choose the correct **keyboard la
 Do not forget to scroll down and click on **Save**.
 
 
-## User management
-
-Initially there is only one preconfigured user account on the virtual machine, the **spsrc** user,
-with privileges to create new accounts for your collaborators.
-
 ### Change your default password
 
 Run the following command on a terminal and follow instructions:
