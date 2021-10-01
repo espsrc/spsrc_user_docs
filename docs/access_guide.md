@@ -88,7 +88,19 @@ chmod 0600 authorized_keys
 You should now be able to login with your SSH keypair. If you have problems, please send your
 public key to ``ska-itsupport`` 'at' ``iaa.csic.es`` and we will configure SSH access for you.
 
-## Remote desktop: Guacamole
+
+## Microsoft Remote Desktop (Mac) and Remina (Linux) access
+
+It is possible to access to you virtual machine through a remote desktop. 
+
+- Install an RDP client on your computer. If you use Mac you can download Microsoft Remote Desktop, for Linux, you can use Remmina
+- Indicate in Host/Server 
+<img width="467" alt="image" src="https://user-images.githubusercontent.com/22152978/135614180-06d080d2-377d-4e78-a94c-f0200daf02da.png">
+
+- You can add your Linux credentials to the connection configuration. If you leave them empty, you will be requested to enter them when you start the connection
+<img width="434" alt="image" src="https://user-images.githubusercontent.com/22152978/135613755-f41ef2df-9dcd-4dc7-b898-4d34764e0063.png">
+
+## Guacamole
 
 When a project requires access to a remote desktop we preconfigure virtual machines with
 [Apache Guacamole](https://guacamole.apache.org).
@@ -168,15 +180,6 @@ Now look for the **Basic Settings** section and choose the correct **keyboard la
 ![](images/guac-locale-2.png)
 
 Do not forget to scroll down and click on **Save**.
-
-## RDP access 
-
-- Install an RDP client on your computer. If you use Mac you can download Microsoft Remote Desktop, for Linux, you can use Remmina
-- indicate in Host/Server 
-<img width="467" alt="image" src="https://user-images.githubusercontent.com/22152978/135614180-06d080d2-377d-4e78-a94c-f0200daf02da.png">
-
-- You can add your linux credentials to the connection configuration. If you leave them empty, you will be requested to enter them when you start the connection
-<img width="434" alt="image" src="https://user-images.githubusercontent.com/22152978/135613755-f41ef2df-9dcd-4dc7-b898-4d34764e0063.png">
 
 
 ## User management
