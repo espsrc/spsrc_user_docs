@@ -2,6 +2,12 @@
 
 #User Guide 
 
+## Software installation
+
+All users are granted with ``sudo`` privileges to use the operating system package manager
+(i.e. ``apt-get`` in Ubuntu, and ``yum/dnf`` in Centos7/8) to install packages via the official
+repositories. 
+
 ## Conda
 
 [Conda](https://conda.io) is a package manager that help you find and install software
