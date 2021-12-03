@@ -64,7 +64,7 @@ jupyter lab --ip=0.0.0.0 --port=<port-number>
 ```
 JupyterLab will print out the URL to connect to your session.
 
-## Singularity Containers 
+## Singularity hub
 
 Containers are unit software packages that contain all the software, files, libraries, dependencies and environmental variables necessary to run a particular task or workflow. Containers are encapsulated software environments and abstract the software and applications from the underlying operating system. This allows users to run workflows in customized environments, switch between environments, and to share these environments with colleagues and research teams.
 
