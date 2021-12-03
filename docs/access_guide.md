@@ -183,6 +183,48 @@ Now look for the **Basic Settings** section and choose the correct **keyboard la
 
 Do not forget to scroll down and click on **Save**.
 
+## User management with Linux 
+
+By default, when a VM is created we will create an account for the PI of the project. PIs can choose to create new accounts for their collaborators.
+
+### Change your default password
+
+Run the following command on a terminal and follow instructions:
+```
+passwd
+```
+
+### Create a user account
+
+Open a terminal and run the following commands:
+```
+# Generate a new password hash:
+openssl passwd
+
+# Create a new account:
+sudo useradd --password "<output-from-previous-command>" --gid spsrc-group --create-home --shell /bin/bash <collaborator>
+```
+For example:
+```
+# Create a new account:
+sudo useradd --password "<output-from-previous-command>" --gid spsrc-group --create-home --shell /bin/bash john
+```
+
+!!! info
+    Please configure a password with less than 8 characters. We have experimented issues with longer passwords.
+
+### Delete a user account
+
+You can delete a user account using the userdel command:
+```
+sudo userdel <collaborator> --remove
+```
+For example:
+```
+sudo userdel john --remove
+```
+
+    
 ## Data transfer
 
 We suggest using [FileZilla](https://filezilla-project.org/download.php?type=client) to transfer data
