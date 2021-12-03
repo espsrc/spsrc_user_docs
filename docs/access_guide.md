@@ -93,11 +93,13 @@ public key to ``ska-itsupport`` 'at' ``iaa.csic.es`` and we will configure SSH a
 
 It is possible to access to you virtual machine through a remote desktop. 
 
-- Install an RDP client on your computer. If you use Mac you can download Microsoft Remote Desktop, for Linux, you can use Remmina
-- Indicate in Host/Server 
+- Install an RDP client on your computer. If you use Mac you can download <a href="https://apps.apple.com/us/app/microsoft-remote-desktop/id1295203466">Microsoft Remote Desktop</a>, for Linux, you can use <a href="https://remmina.org/">Remmina</a>
+- Indicate in Host/Server and port 18020
+<BR>
 <img width="467" alt="image" src="https://user-images.githubusercontent.com/22152978/135614180-06d080d2-377d-4e78-a94c-f0200daf02da.png">
 
 - You can add your Linux credentials to the connection configuration. If you leave them empty, you will be requested to enter them when you start the connection
+<BR>
 <img width="434" alt="image" src="https://user-images.githubusercontent.com/22152978/135613755-f41ef2df-9dcd-4dc7-b898-4d34764e0063.png">
 
 ## Web-based remote desktop
@@ -180,48 +182,6 @@ Now look for the **Basic Settings** section and choose the correct **keyboard la
 ![](images/guac-locale-2.png)
 
 Do not forget to scroll down and click on **Save**.
-
-## User management with Linux 
-
-Initially there is only one preconfigured user account on the virtual machine, the **spsrc** user,
-with privileges to create new accounts for your collaborators.
-
-### Change your default password
-
-Run the following command on a terminal and follow instructions:
-```
-passwd
-```
-
-### Create a user account
-
-Open a terminal and run the following commands:
-```
-# Generate a new password hash:
-openssl passwd
-
-# Create a new account:
-sudo useradd --password "<output-from-previous-command>" --gid spsrc-group --create-home --shell /bin/bash <collaborator>
-```
-For example:
-```
-# Create a new account:
-sudo useradd --password "<output-from-previous-command>" --gid spsrc-group --create-home --shell /bin/bash john
-```
-
-!!! info
-    Please configure a password with less than 8 characters. We have experimented issues with longer passwords.
-
-### Delete a user account
-
-You can delete a user account using the userdel command:
-```
-sudo userdel <collaborator> --remove
-```
-For example:
-```
-sudo userdel john --remove
-```
 
 ## Data transfer
 
