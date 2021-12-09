@@ -70,7 +70,7 @@ Containers are unit software packages that contain all the software, files, libr
 
 Images are the files used to generate containers. Container images become containers at runtime. Containers are then identical copies instantiated from images.
 
-Container images can be found at /spsrc/software/containers/ and are maintained by the support team. 
+Container images can be found at /mnt/software/containers/ and are maintained by the support team. 
 
 Singularity is a open-source sotfware that performs containerization. 
 
@@ -82,7 +82,7 @@ Here we will see an example of how to call the Singualrity container using the s
 
 ```bash  
 
-spsrc@spi-kat-project-007:~$ singularity shell /spsrc/software/containers/casa_stable_5.7.2-4.sif 
+spsrc@spi-kat-project-007:~$ singularity shell /mnt/software/containers/casa_stable_5.7.2-4.sif 
 
 spsrc@casa_stable_5.7.2-4.sif:~$ casa --nogui
 
@@ -117,14 +117,14 @@ A user is able to execute a script or command within the container environment u
 Here we will see an example with common linux commands but you can use any script or software available in the Singularity Image instead.  
 
 ```
-$ singularity exec /spsrc/software/containers/casa_stable_5.7.2-4.sif date
+$ singularity exec /mnt/software/containers/casa_stable_5.7.2-4.sif date
 Fri May  7 16:23:10 UTC
-$ singularity exec /spsrc/software/containers/casa_stable_5.7.2-4.sif echo hello
+$ singularity exec /mnt/software/containers/casa_stable_5.7.2-4.sif echo hello
 hello
 ```
 This is an example of how to execute CASA: 
 ```
-singularity exec /spsrc/software/containers/casa_stable_5.7.2-4.sif casa
+singularity exec /mnt/software/containers/casa_stable_5.7.2-4.sif casa
 ```
 ![](images/singularity_exec_casa.png)
 
@@ -150,12 +150,12 @@ To bind a local directory with a directory inside the container. In this example
 Add the parameter --bind <localfolder>:<containerfolder> to the singularity command:
     
 ```bash
-singularity shell --bind localfolder:containerfolder --cleanenv --home $PWD /spsrc/software/containers/<image_name>
+singularity shell --bind localfolder:containerfolder --cleanenv --home $PWD /mnt/software/containers/<image_name>
 ```
 
 Example with shell interaction and sharing folders:
 ```bash
-singularity shell --bind /home/user/data:/mycontainerfolder --cleanenv --home $PWD /spsrc/software/containers/casa_1.7.0.sif
+singularity shell --bind /home/user/data:/mycontainerfolder --cleanenv --home $PWD /mnt/software/containers/casa_1.7.0.sif
 ```
 Now,  inside the container, if you use the list command 
 ```bash
@@ -165,7 +165,7 @@ you will see you files of your local storage folder in `/home/user/data`.
 
 Now an example with execution mode and sharing folders:
 ```bash
-singularity exec --bind /home/user/data:/mycontainerfolder --cleanenv --home $PWD /spsrc/software/containers/casa_1.7.0.sif python /mycontainerfolder/myscript.py
+singularity exec --bind /home/user/data:/mycontainerfolder --cleanenv --home $PWD /mnt/software/containers/casa_1.7.0.sif python /mycontainerfolder/myscript.py
 ```
 You will execute `python /mycontainerfolder/myscript.py` that corresponds to the execution of the script located in your machine in `/home/user/data/`. Note that you are calling/running the script `myscript.py` from inside the container, so the paths are related to the container.
 
