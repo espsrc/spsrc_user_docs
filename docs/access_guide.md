@@ -196,7 +196,8 @@ passwd
 
 ### Create a user account
 
-Open a terminal and run the following commands:
+Open a terminal and run the following commands. When you enter the ```openssl``` command below, you have to enter twice the password for the new user. 
+The hash code will only be used in the ```useradd``` command, and you don't need to keep it. 
 ```
 # Generate a new password hash:
 openssl passwd
@@ -212,7 +213,7 @@ sudo useradd --password "<output-from-previous-command>" --gid spsrc-group --cre
 
 !!! info
     Please configure a password with less than 8 characters. We have experimented issues with longer passwords.
-
+    
 ### Delete a user account
 
 You can delete a user account using the userdel command:
