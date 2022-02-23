@@ -70,9 +70,34 @@ Containers are unit software packages that contain all the software, files, libr
 
 Images are the files used to generate containers. Container images become containers at runtime. Containers are then identical copies instantiated from images.
 
-Container images can be found at /mnt/software/containers/ and are maintained by the support team. 
+Container images catalogue can be found at ```/mnt/software/containers/``` and are maintained by the support team. 
 
 Singularity is a open-source sotfware that performs containerization. 
+
+### Singularity initialisation
+
+To initialise the use of containers with Sigularity you must create in your mass storage space (usually ```/mnt/scratch/```) of your Virtual Machine the following directories that will be used by Singularity to store transient times:
+
+```
+mkdir -p /mnt/scratch/.singularity_cache
+mkdir -p /mnt/scratch/.singularity_cache/tmp
+mkdir -p /mnt/scratch/.singularity_cache/localcache
+mkdir -p /mnt/scratch/.singularity_cache/pull
+```
+
+and then you must add the following environment variables to your ```.bashrc``` file. To do this type ``nano $HOME/.bashrc`` , move to the end of the file and add the following:
+
+```
+export SINGULARITY_CACHEDIR=/mnt/software/containers/.singularity_cache
+export SINGULARITY_TMPDIR=$$SINGULARITY_CACHEDIR/tmp
+export SINGULARITY_LOCALCACHEDIR=$SINGULARITY_CACHEDIR/localcache
+export SINGULARITY_PULLFOLDER=$SINGULARITY_CACHEDIR/pull
+```
+
+
+Save the file, and run ```source $HOME/.bashrc```. 
+
+This whole process only needs to be done the first time you use Singularity.
 
 ### Singularity shell 
 
