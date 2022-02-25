@@ -212,7 +212,7 @@ sudo useradd --password "<output-from-previous-command>" --gid spsrc-group --cre
 ```
 
 !!! info
-    Please configure a password with less than 8 characters. We have experimented issues with longer passwords.
+    Please configure a password with less than 8 characters. We have experienced issues with longer passwords.
     
 ### Delete a user account
 
