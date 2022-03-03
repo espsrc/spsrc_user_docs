@@ -171,25 +171,29 @@ You will execute `python /mycontainerfolder/myscript.py` that corresponds to the
 
 ## Build your own Singularity containers
 
-If you want to build your own containers with Sigularity you must create in your mass storage space (usually ```/mnt/scratch/```) of your Virtual Machine the following directories that will be used by Singularity to store transient times:
+If you want to build your own containers with Sigularity, please use your mass storage space (usually ```/mnt/scratch/```) of your Virtual Machine. We recommend that you follow this instructions before building or pulling new containers. 
+    
+Create the directories that will be used by Singularity to store transient files:
 
  ```
- mkdir -p /mnt/scratch/.singularity_cache
- mkdir -p /mnt/scratch/.singularity_cache/tmp
- mkdir -p /mnt/scratch/.singularity_cache/localcache
- mkdir -p /mnt/scratch/.singularity_cache/pull
+ mkdir -p /mnt/scratch/user_containers/.singularity_cache
+ mkdir -p /mnt/scratch/user_containers/.singularity_cache/tmp
+ mkdir -p /mnt/scratch/user_containers/.singularity_cache/localcache
+ mkdir -p /mnt/scratch/user_containers/.singularity_cache/pull
  ```
 
- and then you must add the following environment variables to your ```.bashrc``` file. To do this type ``nano $HOME/.bashrc`` , move to the end of the file and add the following:
+and then you must add the following environment variables to your ```.bashrc``` file. To do this type ``nano $HOME/.bashrc`` , move to the end of the file and add the following:
 
  ```
- export SINGULARITY_CACHEDIR=/mnt/software/containers/.singularity_cache
+ export SINGULARITY_CACHEDIR=/mnt/software/user_containers/.singularity_cache
  export SINGULARITY_TMPDIR=$$SINGULARITY_CACHEDIR/tmp
  export SINGULARITY_LOCALCACHEDIR=$SINGULARITY_CACHEDIR/localcache
  export SINGULARITY_PULLFOLDER=$SINGULARITY_CACHEDIR/pull
  ```
 
- Save the file, and run ```source $HOME/.bashrc```. 
+Save the file, and run ```source $HOME/.bashrc```.
+    
+If you don't have a Block Storage assigned (the path `/mnt/scratch/` does not exist), contact the administrators.
 
     
     
