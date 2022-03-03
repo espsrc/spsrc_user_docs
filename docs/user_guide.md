@@ -169,3 +169,28 @@ singularity exec --bind /home/user/data:/mycontainerfolder --cleanenv --home $PW
 ```
 You will execute `python /mycontainerfolder/myscript.py` that corresponds to the execution of the script located in your machine in `/home/user/data/`. Note that you are calling/running the script `myscript.py` from inside the container, so the paths are related to the container.
 
+## Singularity 
+
+If you want to build your own containers with Sigularity you must create in your mass storage space (usually ```/mnt/scratch/```) of your Virtual Machine the following directories that will be used by Singularity to store transient times:
+
+ ```
+ mkdir -p /mnt/scratch/.singularity_cache
+ mkdir -p /mnt/scratch/.singularity_cache/tmp
+ mkdir -p /mnt/scratch/.singularity_cache/localcache
+ mkdir -p /mnt/scratch/.singularity_cache/pull
+ ```
+
+ and then you must add the following environment variables to your ```.bashrc``` file. To do this type ``nano $HOME/.bashrc`` , move to the end of the file and add the following:
+
+ ```
+ export SINGULARITY_CACHEDIR=/mnt/software/containers/.singularity_cache
+ export SINGULARITY_TMPDIR=$$SINGULARITY_CACHEDIR/tmp
+ export SINGULARITY_LOCALCACHEDIR=$SINGULARITY_CACHEDIR/localcache
+ export SINGULARITY_PULLFOLDER=$SINGULARITY_CACHEDIR/pull
+ ```
+
+ Save the file, and run ```source $HOME/.bashrc```. 
+
+    
+    
+    
