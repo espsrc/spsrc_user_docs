@@ -169,7 +169,7 @@ singularity exec --bind /home/user/data:/mycontainerfolder --cleanenv --home $PW
 ```
 You will execute `python /mycontainerfolder/myscript.py` that corresponds to the execution of the script located in your machine in `/home/user/data/`. Note that you are calling/running the script `myscript.py` from inside the container, so the paths are related to the container.
 
-## Singularity 
+## Build your own Singularity containers
 
 If you want to build your own containers with Sigularity you must create in your mass storage space (usually ```/mnt/scratch/```) of your Virtual Machine the following directories that will be used by Singularity to store transient times:
 
