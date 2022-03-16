@@ -185,7 +185,10 @@ Do not forget to scroll down and click on **Save**.
 
 ## User management with Linux 
 
-By default, when a VM is created we will create an account for the PI of the project. PIs can choose to create new accounts for their collaborators.
+By default, when a VM is created we will create an account for the PI of the project.  
+The Ip account will have restricted sudo access and can choose to create new accounts for their collaborators.
+All users created will be by default in group *spsrc-users*  without sudo access. 
+
 
 ### Change your default password
 
@@ -203,23 +206,6 @@ The hash code will only be used in the ```useradd``` command, and you don't need
 openssl passwd
 
 # Create a new account:
-sudo useradd --password "<output-from-previous-command>" --gid spsrc-group --create-home --shell /bin/bash <collaborator>
-```
-For example:
-```
-# Create a new account:
-sudo useradd --password "<output-from-previous-command>" --gid spsrc-group --create-home --shell /bin/bash john
-```
-
-!!! info
-    Please configure a password with less than 8 characters. We have experienced issues with longer passwords.
-
-For vm created from february 2022 onwards 
-```
-# Generate a new password hash:
-openssl passwd
-
-# Create a new account:
 sudo useradd --password "<output-from-previous-command>" --gid spsrc-users --create-home --shell /bin/bash <collaborator>
 ```
 For example:
@@ -230,6 +216,25 @@ sudo useradd --password "<output-from-previous-command>" --gid spsrc-users --cre
 
 !!! info
     Please configure a password with less than 8 characters. We have experienced issues with longer passwords.
+
+### Limited root access for a user account
+If the PI want to give a user the same level of sudo access, you need to add the user to the *spsrc-group* group
+```
+# add user to spsrc-group 
+sudo usermod -a -G spsrc-group <collaborator>
+
+# add user to spsrc-group
+sudo usermod -a -G spsrc-group john
+```
+After this the user must restart sesion in the VM
+```
+# Close your actual session:
+exit
+```
+You can connect to the VM with the new permissions.
+!!! info
+	For VM created before February 2022, contact support if you want to create a new user
+
 	    
 ### Delete a user account
 
