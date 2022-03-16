@@ -213,7 +213,24 @@ sudo useradd --password "<output-from-previous-command>" --gid spsrc-group --cre
 
 !!! info
     Please configure a password with less than 8 characters. We have experienced issues with longer passwords.
-    
+
+For vm created from february 2022 onwards 
+```
+# Generate a new password hash:
+openssl passwd
+
+# Create a new account:
+sudo useradd --password "<output-from-previous-command>" --gid spsrc-users --create-home --shell /bin/bash <collaborator>
+```
+For example:
+```
+# Create a new account:
+sudo useradd --password "<output-from-previous-command>" --gid spsrc-users --create-home --shell /bin/bash john
+```
+
+!!! info
+    Please configure a password with less than 8 characters. We have experienced issues with longer passwords.
+	    
 ### Delete a user account
 
 You can delete a user account using the userdel command:
