@@ -202,11 +202,11 @@ Open a terminal and run the following commands. When you enter the ```openssl```
 openssl passwd
 
 # Create a new account:
-sudo useradd --password "<output-from-previous-command>" --gid spsrc-group --create-home --shell /bin/bash <collaborator>
+sudo useradd --password "<output-from-previous-command>" --gid spsrc-users --create-home --shell /bin/bash <collaborator>
 ```
 For example, imagine you want to create the user `john` with password `acomlpicatedpass`. You can do:
     
-```
+```bash
 openssl passwd
 Password:                 <--- write acomplicatedpass
 Verifying - Password:     <--- write acomplicatedpass
@@ -214,9 +214,6 @@ Verifying - Password:     <--- write acomplicatedpass
 
 sudo useradd --password 7TRPLSzGYvTf4 --gid spsrc-users --create-home --shell /bin/bash john
 ```
-
-!!! info
-    Please configure a password with less than 8 characters. We have experienced issues with longer passwords.
     
 ### Delete a user account
 
