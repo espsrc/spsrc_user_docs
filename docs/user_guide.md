@@ -186,7 +186,7 @@ and then you must add the following environment variables to your ```.bashrc``` 
 
  ```
  export SINGULARITY_CACHEDIR=/mnt/software/user_containers/.singularity_cache
- export SINGULARITY_TMPDIR=$$SINGULARITY_CACHEDIR/tmp
+ export SINGULARITY_TMPDIR=$SINGULARITY_CACHEDIR/tmp
  export SINGULARITY_LOCALCACHEDIR=$SINGULARITY_CACHEDIR/localcache
  export SINGULARITY_PULLFOLDER=$SINGULARITY_CACHEDIR/pull
  ```
