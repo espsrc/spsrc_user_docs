@@ -179,16 +179,15 @@ Create the directories that will be used by Singularity to store transient files
  mkdir -p /mnt/scratch/user_containers/.singularity_cache
  mkdir -p /mnt/scratch/user_containers/.singularity_cache/tmp
  mkdir -p /mnt/scratch/user_containers/.singularity_cache/localcache
- mkdir -p /mnt/scratch/user_containers/.singularity_cache/pull
  ```
 
 and then you must add the following environment variables to your ```.bashrc``` file. To do this type ``nano $HOME/.bashrc`` , move to the end of the file and add the following:
 
  ```
- export SINGULARITY_CACHEDIR=/mnt/software/user_containers/.singularity_cache
+ export SINGULARITY_CACHEDIR=/mnt/scratch/user_containers/.singularity_cache
  export SINGULARITY_TMPDIR=$SINGULARITY_CACHEDIR/tmp
  export SINGULARITY_LOCALCACHEDIR=$SINGULARITY_CACHEDIR/localcache
- export SINGULARITY_PULLFOLDER=$SINGULARITY_CACHEDIR/pull
+ export SINGULARITY_PULLFOLDER=/mnt/scratch/user_containers
  ```
 
 Save the file, and run ```source $HOME/.bashrc```.
