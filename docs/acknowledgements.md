@@ -2,7 +2,7 @@
 
 You can acknowledge the use of the SPSRC in this way:
 
-> XXX acknowledges the Spanish Prototype of an SRC (SPSRC) service and support funded by the Spanish Ministry of Science, Innovation and Universities, by the Regional Government of Andalusia and by the European Regional Development Funds. 
+> XXX acknowledges the Spanish Prototype of an SRC (SPSRC) service and support funded by the Spanish Ministry of Science, Innovation and Universities, by the Regional Government of Andalusia, by the European Regional Development Funds and and by the European Union NextGenerationEU/PRTR. 
 
 Please also cite  [Toward a Spanish SKA Regional Centre fully engaged with open science
 ](https://www.spiedigitallibrary.org/journals/journal-of-astronomical-telescopes-instruments-and-systems/volume-8/issue-1?utm_id=sjjatis0422acnbe&spMailingID=8255119&spUserID=NDA5MDI1Mzk5NTU2S0&spJobID=1500281855&spReportId=MTUwMDI4MTg1NQS2#SpecialSectionontheSKAObservatory).
