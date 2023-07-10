@@ -228,24 +228,25 @@ passwd
 
 ### Create a user account
 
-Open a terminal and run the following commands. When you enter the ```openssl``` command below, you have to enter twice the password for the new user. 
-The hash code will only be used in the ```useradd``` command, and you don't need to keep it. 
+Open a terminal and run the following commands. When you enter the ```openssl``` command below, you have to enter twice the password **for the new user**. The hash code will only be used in the ```useradd``` command, and you don't need to keep it. 
 ```
-# Generate a new password hash:
+# Generate a new hash (enter the password for the future new user):
 openssl passwd
 
 # Create a new account:
 sudo useradd --password "<output-from-previous-command>" --gid spsrc-users --create-home --shell /bin/bash <collaborator>
-```
-For example:
-```
-# Create a new account:
-sudo useradd --password "<output-from-previous-command>" --gid spsrc-users --create-home --shell /bin/bash john
-```
 
-!!! info
-    Please configure a password with less than 8 characters. We have experienced issues with longer passwords.
-
+```
+For example, imagine you want to create the user `john` with password `acomlpicatedpass`. You can do:
+    
+```bash
+openssl passwd
+Password:                 <--- write acomplicatedpass
+Verifying - Password:     <--- write acomplicatedpass
+7TRPLSzGYvTf4             <--- you will get a hash code similar to this one
+sudo useradd --password 7TRPLSzGYvTf4 --gid spsrc-users --create-home --shell /bin/bash john
+```
+                               
 ### Limited root access for a user account
 If the PI want to give a user the same level of sudo access, you need to add the user to the *spsrc-group* group
 ```
@@ -256,15 +257,8 @@ sudo usermod -a -G spsrc-group <collaborator>
 sudo usermod -a -G spsrc-group john
 ```
 After this the user must restart sesion in the VM
-```
-# Close your actual session:
-exit
-```
-You can connect to the VM with the new permissions.
-!!! info
-	For VM created before February 2022, contact support if you want to create a new user
 
-	    
+
 ### Delete a user account
 
 You can delete a user account using the userdel command:
