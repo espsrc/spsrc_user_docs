@@ -10,27 +10,35 @@ repositories.
 
 ## Conda
 
+### Basic conda installation
+
 [Conda](https://conda.io) is a package manager that help you find and install software
 packages without having administrator privileges.
 
-Below are the steps to get a basic conda installation working with Python 3. Open
-a terminal on your virtual machine and run the following commands:
+Below are the steps to get a basic conda installation. Open a terminal on your virtual machine and run the following commands.
 
-```
-# Go to a working directory to install conda
-mkdir test
-cd test
+:warning: During the installation process select a working directory in your scratch disk (usually select: `/mnt/scratch/miniconda3`). By default, the installer will recommend to use your `home`, but the space there is limited.
 
+```bash
 # Download installer
 curl -O https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
 
 # Install conda in the "conda-install" folder
-bash Miniconda3-latest-Linux-x86_64.sh -b -p conda-install
+bash ./Miniconda3-latest-Linux-x86_64.sh
 
-# Activate conda
-source conda-install/etc/profile.d/conda.sh
+# Once the installation is finished:
+rm ./Miniconda3-latest-Linux-x86_64.sh
+```
+To have `conda` available, just close the terminal and open a new one.
 
-# Create a basic environment with the latest Python 3
+We recommend installing [mamba](https://github.com/mamba-org/mamba) in your base environment, since mamba is a very efficient dependency solver. When you have it installed, you can start the installation commands with `mamba install...` instead of `conda install...`. You can install it in the base environment with:
+
+```
+conda install mamba -n base -c conda-forge
+```
+
+### Example: Create a basic environment with the latest Python 3
+```
 conda create -n py3env python=3
 
 # Activate the "py3env":
@@ -46,21 +54,23 @@ which pip
 # To leave the environment, type:
 conda deactivate
 ```
+
 Conda environments are great for managing the dependencies on your projects
 and it helps you improve the reproducibility of your code. For more information
-about conda, please visit: [Getting started with Conda](https://docs.conda.io/projects/conda/en/latest/user-guide/getting-started.html).
+about conda, please visit: [Getting started with Conda](https://docs.conda.io/projects/conda/en/latest/user-guide/getting-started.html) or the [Open Science Droplets](https://droplets-spsrc.readthedocs.io/conda/).
 
 
-### Install JupyterLab with Conda
+### Example: Install JupyterLab with Conda
 
 Here we describe the steps to install JupyterLab into its own conda environment:
 
 ```
-# Follow steps above to install conda.
 # Then create a conda environment for JupyterLab:
 conda create -n jupyterlab -c conda-forge jupyterlab -y
 conda activate jupyterlab
-jupyter lab --ip=0.0.0.0 --port=<port-number>
+
+# Start jupyter:
+jupyter lab
 ```
 JupyterLab will print out the URL to connect to your session.
 
