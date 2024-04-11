@@ -2,7 +2,7 @@
 
 You can acknowledge the use of the SPSRC in this way:
 
-> Author [ insert author's name] acknowledges the Spanish Prototype of an SRC (SPSRC) service and support funded by the Ministerio de Ciencia e Innovación (MCIN), by the Junta de Andalucía, by the European Regional Development Funds (ERDF) and by the European Union NextGenerationEU/PRTR. The SPSRC acknowledges financial support from the Agencia Estatal de Investigación (AEI) through the "Center of Excellence Severo Ochoa" award to the Instituto de Astrofísica de Andalucía (IAA-CSIC) (SEV-2017-0709) and from the grant CEX2021-001131-S funded by MCIN/AEI/ 10.13039/501100011033.
+> Author [ insert author's name] acknowledges the Spanish Prototype of an SRC (SPSRC) service and support funded by the Ministerio de Ciencia, Innovación y Universidades (MCIU), by the Junta de Andalucía, by the European Regional Development Funds (ERDF) and by the European Union NextGenerationEU/PRTR. The SPSRC acknowledges financial support from the Agencia Estatal de Investigación (AEI) through the "Center of Excellence Severo Ochoa" award to the Instituto de Astrofísica de Andalucía (IAA-CSIC) (SEV-2017-0709) and from the grant CEX2021-001131-S funded by MCIU/AEI/ 10.13039/501100011033.
 
 Please also cite  [Toward a Spanish SKA Regional Centre fully engaged with open science
 ](https://www.spiedigitallibrary.org/journals/journal-of-astronomical-telescopes-instruments-and-systems/volume-8/issue-1?utm_id=sjjatis0422acnbe&spMailingID=8255119&spUserID=NDA5MDI1Mzk5NTU2S0&spJobID=1500281855&spReportId=MTUwMDI4MTg1NQS2#SpecialSectionontheSKAObservatory).
