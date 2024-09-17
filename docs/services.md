@@ -43,7 +43,7 @@ The protoSRC Container Registry provides a catalog of ready-to-use applications 
 
 
 
-# Resource accounting information
+## Resource accounting information
 
 The parameters used for accounting the resource usage of the protoSRC in each of the service categories offered are desccribed as follows. While no costs are currently charged for the use of these resources, this accounting allows for a better evaluation of the support provided in quantifiable terms, ensuring equitable distribution.
 
