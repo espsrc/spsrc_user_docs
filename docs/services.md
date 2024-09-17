@@ -32,3 +32,56 @@ We help users to follow Open Science and Reproducibility [best practices](https:
 
 We offer a [Jupyter](https://jupyter.org/hub) platform for data exploration, data analysis and workflows using a web interface. This service is available also for training activities, courses and schools. 
 
+
+## Batch processing service with Slurm 
+
+If you are interested in the batch processing service through slurm please contact us. 
+
+## ContainersHub 
+
+The protoSRC Container Registry provides a catalog of ready-to-use applications and services from a virtual machine instance, also providing the ability to include your own software in the repository. 
+
+
+
+# Resource accounting information
+
+The parameters used for accounting the resource usage of the protoSRC in each of the service categories offered are desccribed as follows. While no costs are currently charged for the use of these resources, this accounting allows for a better evaluation of the support provided in quantifiable terms, ensuring equitable distribution.
+
+### A) Support Services
+
+Billing unit: €/hour Cost: €34.70/hour
+
+### B) Virtual Infrastructure Services
+
+Virtual machine instances  
+Billing unit: €/day
+
+| Flavor                    | vCPU | RAM  | Storage (GB) | Cost (€/day) |
+|-------------------------------|----------|----------|------------------|------------------|
+| Flavor 1                       | 2        | 2 GB     | 50 GB            | €0.67            |
+| Flavor 2                       | 4        | 8 GB     | 50 GB            | €2.02            |
+| Flavor 3                       | 8        | 16 GB    | 50 GB            | €4.03            |
+| Flavor 4                       | 8        | 32 GB    | 50 GB            | €6.72            |
+| Flavor 5                       | 16       | 32 GB    | 50 GB            | €8.10            |
+| Flavor 6                       | 24       | 32 GB    | 50 GB            | €9.41            |
+| Flavor 7                       | 32       | 128 GB   | 50 GB            | €26.88           |
+
+  
+Mass storage
+- Type: Block Storage  
+  Billing unit: €/GB Cost: €0.018/GB
+- Type: CephFS  
+  Billing unit: €/GB Cost: €0.023/GB
+
+
+
+### C) Analysis Platform Services
+- Use of Batch Processing Service with Slurm  
+Billing unit: €/hour Cost: €1.56/hour
+
+- High availability JupyterHub  
+Billing unit: €/user/month Cost per user: €15/month
+
+- Container and software registry service (ContainersHub)  
+Billing unit: €/service One-time cost: €10
+
