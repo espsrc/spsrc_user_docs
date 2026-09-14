@@ -39,7 +39,6 @@ The protoSRC provides the following default flavors but talk to us if you need s
 
 We currently support the following base images for virtual machines:
 
-- Ubuntu 24.04
-- Ubuntu 26.04
-- CentOS
+- Ubuntu 26.04 LTS Server
+- Debian 13
 
