@@ -41,4 +41,5 @@ We currently support the following base images for virtual machines:
 
 - Ubuntu 26.04 LTS Server
 - Debian 13
+- Rocky Linux 9
 
