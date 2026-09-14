@@ -16,8 +16,8 @@ The protoSRC computing facility at the IAA-CSIC runs an OpenStack cloud with the
 
 **Storage:**
 
-- 1.47 TB of raw SSD storage
-- 1.15 TB of raw HDD storage
+- 1.47 PB of raw SSD storage
+- 1.15 PB of raw HDD storage
 
 **Network:**
 
@@ -39,8 +39,7 @@ The protoSRC provides the following default flavors but talk to us if you need s
 
 We currently support the following base images for virtual machines:
 
-- Ubuntu 18.04
-- Ubuntu 20.04
-- CentOS 8
-- CentOS 7
+- Ubuntu 24.04
+- Ubuntu 26.04
+- CentOS
 
